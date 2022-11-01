@@ -14,14 +14,27 @@ body {
   color: var(--text-color);
   background-color: var(--fon-color);
 }
-
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
 /* шапка */
 /* лого */
+.conteiner {
+  margin: auto;
+  padding: auto;
+  width: 1200px;
+}
 .logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   color: var(--titel-color);
   font-weight: 700;
@@ -69,11 +82,12 @@ ul {
 /* основа */
 .hero {
   background: #2f303a;
+  text-align: center;
 }
 
 .button {
+  margin-bottom: 200px;
   font-family: inherit;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -89,6 +103,8 @@ ul {
   color: var(--logo-color);
 }
 .hero-text {
+  padding-top: 200px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -100,12 +116,14 @@ ul {
 /* Чим ми займаємося */
 .work-lits {
   line-height: 1.71;
+  margin-top: 10px;
 }
 /* .work-titel {
   display: none;
 } */
 
 .Benefits {
+  padding-top: 94px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -114,6 +132,8 @@ ul {
 
 /* Чим ми займаємося */
 .doing-titel {
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -126,6 +146,8 @@ ul {
 }
 
 .team-titel {
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -133,6 +155,7 @@ ul {
 }
 
 .tean-name {
+  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -140,6 +163,8 @@ ul {
 }
 
 .profession {
+  padding-top: 10px;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -153,6 +178,8 @@ ul {
 }
 
 .map {
+  display: inline-block;
+  padding-top: 20px;
   text-decoration: none;
   line-height: 1.71;
   color: var(--fon-color);
@@ -165,6 +192,8 @@ ul {
 }
 
 .contact-bottom {
+  display: inline-block;
+  padding-top: 9px;
   line-height: 1.71;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
@@ -199,6 +228,7 @@ ul {
 /* Список */
 
 .portfolio-projects {
+  padding-top: 20px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -206,11 +236,14 @@ ul {
 }
 
 .specification-projects {
+  padding-top: 4px;
   font-size: 16px;
   line-height: 1.88;
 }
 /* лого подвал */
 .logo-bottom {
+  display: inline-block;
+  margin-top: 60px;
   font-family: "Raleway", sans-serif;
   color: var(--fon-color);
   font-weight: 700;
@@ -242,6 +275,7 @@ ul {
   overflow: hidden;
 }
 .projects {
+  padding-top: 34px;
   background: var(--fon-color);
   border: 1px solid #eeeeee;
 }
