@@ -399,7 +399,7 @@ ul {
 }
 
 .item-foto {
-  display: inline;
+  display: inline-block;
   width: 100%;
   height: auto;
   margin: 0;
