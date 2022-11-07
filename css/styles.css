@@ -3,6 +3,8 @@
   --logo-color: #2196f3;
   --fon-color: #ffffff;
   --titel-color: #212121;
+  --fon-hero-color: #2f303a;
+  --team-colof: #f5f4fa;
 }
 
 body {
@@ -31,6 +33,12 @@ ul {
 
 /* шапка */
 /* лого */
+.current {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--logo-color)
+}
+
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -63,7 +71,6 @@ ul {
 /* сайти */
 .nav-main {
   display: flex;
-
   align-items: center;
 }
 
@@ -125,10 +132,10 @@ ul {
 
 /* ГЕРОЙ */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--fon-hero-color);
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .button {
@@ -145,7 +152,6 @@ ul {
   color: var(--fon-color);
   background-color: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .button:hover,
@@ -166,6 +172,9 @@ ul {
 }
 
 /* Перелік */
+.work {
+  padding-top: 94px;
+}
 
 .work-lits {
   line-height: 1.71;
@@ -188,7 +197,7 @@ ul {
 
 .work-benefis {
   display: flex;
-  margin-top: 94px;
+
 }
 
 .benefits-item+.benefits-item {
@@ -205,7 +214,6 @@ ul {
 /* Чим ми займаємося */
 .doing-titel {
   text-align: center;
-  margin-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -216,20 +224,22 @@ ul {
   margin-left: 30px;
 }
 
+.doing {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .doing-item {
   display: flex;
   flex-basis: calc((100%-60px) / 3);
   margin-top: 50px;
 }
 
-.doing-foto {
-  display: inline-block;
-}
 
 /* команда */
 .img {
-  display: inline-block;
-  width: 270px;
+  display: block;
+  width: 100%;
   height: auto;
 }
 
@@ -240,13 +250,12 @@ ul {
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-colof);
+  padding-top: 94px;
   padding-bottom: 94px;
-  margin-top: 94px;
 }
 
 .team-card {
-  display: inline-block;
   background: var(--fon-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -258,7 +267,6 @@ ul {
 }
 
 .team-titel {
-  padding-top: 94px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -269,7 +277,7 @@ ul {
 .tean-name {
   text-align: center;
 
-  margin-top: 30px;
+  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -277,9 +285,9 @@ ul {
 }
 
 .profession {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 10px;
   text-align: center;
-  margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -291,7 +299,7 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--fon-color);
-  background-color: #2f303a;
+  background-color: var(--fon-hero-color);
 }
 
 /* лого подвал */
@@ -327,11 +335,9 @@ ul {
 
 .address {
   font-style: normal;
+  padding-top: 20px;
 }
 
-.contacts {
-  margin-top: 20px;
-}
 
 .contact-bottom:hover,
 .contact-bottom:focus {
@@ -350,7 +356,8 @@ ul {
 }
 
 .portfolio {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .nav-button+.nav-button {
@@ -358,7 +365,6 @@ ul {
 }
 
 .button-portfolio {
-  display: inline-block;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 25px;
@@ -368,10 +374,11 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   color: var(--titel-color);
-  background-color: #f5f4fa;
+  background-color: var(--team-colof);
   border-radius: 4px;
   cursor: pointer;
-  border: 0;
+  border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-portfolio:hover,
@@ -429,7 +436,7 @@ ul {
 }
 
 .item-foto {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto;
 }
