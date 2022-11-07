@@ -32,6 +32,12 @@ ul {
 
 /* шапка */
 /* лого */
+.current {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--logo-color)
+}
+
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
