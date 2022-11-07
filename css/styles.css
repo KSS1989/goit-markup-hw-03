@@ -3,6 +3,7 @@
   --logo-color: #2196f3;
   --fon-color: #ffffff;
   --titel-color: #212121;
+  --fon-hero-color: #2f303a;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
   color: var(--text-color);
   background-color: var(--fon-color);
 }
+
 h1,
 h2,
 h3,
@@ -21,11 +23,13 @@ p {
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 /* шапка */
 /* лого */
 .header {
@@ -33,11 +37,13 @@ ul {
   border-bottom-style: solid;
   border-bottom-color: #ececec;
 }
+
 .conteiner {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .logo {
   display: flex;
   font-family: "Raleway", sans-serif;
@@ -61,14 +67,16 @@ ul {
 
   align-items: center;
 }
+
 .nav-item {
   display: flex;
   margin-left: 93px;
 }
 
-.item + .item {
+.item+.item {
   margin-left: 50px;
 }
+
 .sate {
   display: block;
   padding-top: 32px;
@@ -93,10 +101,12 @@ ul {
   justify-content: flex-end;
   margin-left: auto;
 }
+
 .nav-contact {
   display: flex;
   align-items: center;
 }
+
 .contact {
   display: block;
   padding-top: 32px;
@@ -116,10 +126,10 @@ ul {
 
 /* ГЕРОЙ */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--fon-hero-color);
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .button {
@@ -136,13 +146,15 @@ ul {
   color: var(--fon-color);
   background-color: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border-radius: none;
 }
+
 .button:hover,
 .button:focus {
   background-color: var(--fon-color);
   color: var(--logo-color);
 }
+
 .hero-text {
   font-weight: 900;
   font-size: 44px;
@@ -153,7 +165,11 @@ ul {
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 /* Перелік */
+.work {
+  padding-top: 94px;
+}
 
 .work-lits {
   line-height: 1.71;
@@ -173,13 +189,15 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .work-benefis {
   display: flex;
-  margin-top: 94px;
 }
-.benefits-item + .benefits-item {
+
+.benefits-item+.benefits-item {
   margin-left: 30px;
 }
+
 .benefits {
   font-weight: 700;
   line-height: 1.14;
@@ -188,17 +206,23 @@ ul {
 }
 
 /* Чим ми займаємося */
+.doing {
+  padding-top: 94px;
+}
+
 .doing-titel {
   text-align: center;
-  margin-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   color: var(--titel-color);
 }
-.doing-foto + .doing-foto {
+
+
+.doing-foto+.doing-foto {
   margin-left: 30px;
 }
+
 .doing-item {
   display: flex;
   flex-basis: calc((100%-60px) / 3);
@@ -208,12 +232,14 @@ ul {
 .doing-foto {
   display: inline-block;
 }
+
 /* команда */
 .img {
-  display: inline-block;
-  width: 270px;
+  display: block;
+  width: 100%;
   height: auto;
 }
+
 .team-item {
   display: flex;
   flex-wrap: wrap;
@@ -223,23 +249,21 @@ ul {
 .team {
   background-color: #f5f4fa;
   padding-bottom: 94px;
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .team-card {
-  display: inline-block;
   background: var(--fon-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-card + .team-card {
+.team-card+.team-card {
   margin-left: 30px;
 }
 
 .team-titel {
-  padding-top: 94px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -250,7 +274,7 @@ ul {
 .tean-name {
   text-align: center;
 
-  margin-top: 30px;
+  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -258,9 +282,9 @@ ul {
 }
 
 .profession {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   text-align: center;
-  margin-top: 10px;
+  padding-top: 10px;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -272,8 +296,9 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--fon-color);
-  background-color: #2f303a;
+  background-color: var(--fon-hero-color);
 }
+
 /* лого подвал */
 .logo-bottom {
   display: inline-block;
@@ -304,17 +329,19 @@ ul {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .address {
   font-style: normal;
-}
-.contacts {
   margin-top: 20px;
 }
+
+
 .contact-bottom:hover,
 .contact-bottom:focus {
   color: var(--logo-color);
 }
-.contacts-bottom + .contacts-bottom {
+
+.contacts-bottom+.contacts-bottom {
   margin-top: 9px;
 }
 
@@ -324,15 +351,17 @@ ul {
   display: flex;
   justify-content: center;
 }
+
 .portfolio {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.nav-button + .nav-button {
+
+.nav-button+.nav-button {
   margin-left: 8px;
 }
 
 .button-portfolio {
-  display: inline-block;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 25px;
@@ -345,7 +374,7 @@ ul {
   background-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
-  border: 0;
+  border: none;
 }
 
 .button-portfolio:hover,
@@ -368,20 +397,25 @@ ul {
   flex-wrap: wrap;
   margin-top: 34px;
 }
+
 .projects {
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: var(--fon-color);
 }
+
 .projects:nth-child(3n) {
   margin-right: 0;
 }
+
 .specification-projects {
   margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
 }
+
 .item-h {
+  /* Встановить стилі правої рамки */
   padding: 20px 24px 31px;
   border-right-width: 1px;
   border-right-style: solid;
@@ -399,8 +433,7 @@ ul {
 }
 
 .item-foto {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto;
-  margin: 0;
 }
