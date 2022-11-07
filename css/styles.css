@@ -232,7 +232,7 @@ ul {
 .doing-item {
   display: flex;
   flex-basis: calc((100%-60px) / 3);
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 
