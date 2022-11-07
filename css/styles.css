@@ -33,11 +33,7 @@ ul {
 
 /* шапка */
 /* лого */
-.current {
-  border-bottom-width: 3px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--logo-color)
-}
+
 
 .header {
   border-bottom-width: 1px;
@@ -77,11 +73,15 @@ ul {
 .nav-item {
   display: flex;
   margin-left: 93px;
+
 }
 
 .item+.item {
   margin-left: 50px;
 }
+
+
+
 
 .sate {
   display: block;
@@ -99,6 +99,8 @@ ul {
 .sate:focus {
   color: var(--logo-color);
 }
+
+
 
 /* контакты */
 .nav-herder {
@@ -151,6 +153,7 @@ ul {
   cursor: pointer;
   color: var(--fon-color);
   background-color: var(--logo-color);
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -174,6 +177,7 @@ ul {
 /* Перелік */
 .work {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .work-lits {
@@ -225,7 +229,7 @@ ul {
 }
 
 .doing {
-  padding-top: 94px;
+
   padding-bottom: 94px;
 }
 
@@ -286,7 +290,7 @@ ul {
 
 .profession {
   padding-bottom: 30px;
-  padding-top: 10px;
+  margin-top: 10px;
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
@@ -335,13 +339,14 @@ ul {
 
 .address {
   font-style: normal;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 
 .contact-bottom:hover,
 .contact-bottom:focus {
   color: var(--logo-color);
+
 }
 
 .contacts-bottom+.contacts-bottom {
@@ -378,13 +383,14 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--logo-color);
   color: var(--fon-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Список */
